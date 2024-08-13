@@ -1,0 +1,156 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9e0f6;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2.5em;
+    margin: 0;
+    color: #333;
+}
+
+.nav-menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    color: #bd00f7;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.text-content {
+    max-width: 50%;
+    text-align: left;
+}
+
+.text-content h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.text-content .highlight {
+    color: #24cca6;
+    font-weight: bold;
+}
+
+.text-content .subtitle {
+    color: #777;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.purchase-button {
+    padding: 10px 20px;
+    background-color: #bd00f7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.purchase-button:hover {
+    background-color: #bd00f7;
+}
+
+.image-content img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+footer blockquote {
+    font-style: italic;
+    color: #555;
+}
+
+footer cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.info-table {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+.info-table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.info-table td {
+    padding: 10px 15px;
+    text-align: left;
+    font-size: 1em;
+    color: #333;
+}
+
+.info-table td:first-child {
+    font-weight: bold;
+    color: #24cca6;
+}
+
+.info-table td:last-child {
+    text-align: right;
+    color: #555;
+}
+
+.info-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.purchase-button {
+    padding: 10px 20px;
+    background-color: #24cca6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.purchase-button:hover {
+    background-color: #bd00f7;
+}
