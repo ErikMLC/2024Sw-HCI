@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Libro - Venta de eBooks</title>
     <link rel="stylesheet" href="./styles1.css">
+    <script defer src="./libro.js"></script>
+     <!-- PapaParse Library -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -13,53 +16,79 @@
         </div>
         <nav class="nav-menu">
             <a href="index.html">INICIO</a>
-            <a href="autor.html">AUTOR</a>
             <a href="contact.html">CONTACTO</a>
         </nav>
     </header>
 
     <section class="hero-section">
         <div class="text-content">
-            <h2><span class="highlight">The Secrets</span> to Selling eBooks With Ethority.</h2>
-            <table class="info-table">
-                <tr>
-                    <td><strong>Autor:</strong></td>
-                    <td>Lorem Ipsum</td>
-                </tr>
-                <tr>
-                    <td><strong>Editorial:</strong></td>
-                    <td>Lorem Ipsum Dolor</td>
-                </tr>
-                <tr>
-                    <td><strong>Tipo de Obra:</strong></td>
-                    <td>Lorem Ipsum Sit</td>
-                </tr>
-                <tr>
-                    <td><strong>Fecha de publicación:</strong></td>
-                    <td>2024-08-12</td>
-                </tr>
-                <tr>
-                    <td><strong>Género o Campo:</strong></td>
-                    <td>Lorem Ipsum</td>
-                </tr>
-                <tr>
-                    <td><strong>Estado:</strong></td>
-                    <td>Disponible</td>
-                </tr>
-            </table>
-            <button class="purchase-button">Purchase</button>
+            <h2 id="titulo-obra">Título de la Obra</h2>
+            <div class="info-container">
+                <table class="info-table">
+                    <tr>
+                        <td><strong>Autor:</strong></td>
+                        <td id="autor">Cargando...</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Editorial:</strong></td>
+                        <td id="editorial">Cargando...</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tipo de Obra:</strong></td>
+                        <td id="tipoObra">Cargando...</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fecha de Publicación:</strong></td>
+                        <td id="fechaPublicacion">Cargando...</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Género:</strong></td>
+                        <td id="genero">Cargando...</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Estado:</strong></td>
+                        <td id="estado">Cargando...</td>
+                    </tr>
+                </table>
+                <button class="purchase-button" onclick="window.history.back()">Volver</button>
+            </div>
         </div>
         <div class="image-content">
-            <img src="assets/images1.jpg" alt="Libro - Sell Your eBooks With Ethority">
+            <img src="./assets/images1.jpg" alt="Detalle de la Obra">
         </div>
     </section>
     
 
     <footer>
-        <blockquote>
-            <p>"So much great information!"</p>
-            <cite>– Vegar Moen</cite>
-        </blockquote>
+        <div class="footer-content">
+            <div class="footer-section left">
+                <ul>
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                   
+                </ul>
+            </div>
+            <div class="footer-section center">
+                <h2>EPN Biblioteca</h2>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section right">
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EPN Biblioteca. Todos los derechos reservados.</p>
+        </div>
     </footer>
     
 </body>

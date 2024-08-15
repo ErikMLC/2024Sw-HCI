@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Libro - Venta de eBooks</title>
-    <link rel="stylesheet" href="./styles1.css">
+    <title>Biblioteca - Lista de Obras</title>
+    <link rel="stylesheet" href="./styles2.css">
+
     <!-- PapaParse Library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <!-- Custom Script -->
+    <script defer src="./script.js"></script>
+     <!-- PapaParse Library -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -21,29 +26,23 @@
 
     <section class="hero-section">
         <div class="text-content">
-            <h2><span class="highlight">Detalles del Autor</span></h2>
-            <table class="info-table">
-                <tr>
-                    <td><strong>Nombre de Autor:</strong></td>
-                    <td id="autor"></td>
-                </tr>
-                <tr>
-                    <td><strong>Tipo de Autor:</strong></td>
-                    <td id="tipoAutor"></td>
-                </tr>
-                <tr>
-                    <td><strong>Código Orcid:</strong></td>
-                    <td id="codigoOrcid"></td>
-                </tr>
-            </table>
-            <button class="purchase-button" onclick="window.history.back();">Volver</button>
-        </div>
-        <div class="image-content">
-            <img src="assets/autor.jpg" alt="Autor - Detalles del Autor">
+            <h2><span class="highlight">Lista de Obras en la Biblioteca</span></h2>
+            <div class="table-responsive">
+                <table class="info-table">
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Autor</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="biblioteca-table-body">
+                        <!-- Filas generadas dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
-
-    
 
     <footer>
         <div class="footer-content">
@@ -76,15 +75,6 @@
             <p>&copy; 2024 EPN Biblioteca. Todos los derechos reservados.</p>
         </div>
     </footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const params = new URLSearchParams(window.location.search);
-
-            document.getElementById('autor').textContent = params.get('nombreAutor');
-            document.getElementById('tipoAutor').textContent = params.get('tipoAutor');
-            document.getElementById('codigoOrcid').textContent = params.get('codigoOrcid');
-        });
-    </script>
     
 </body>
 </html>
